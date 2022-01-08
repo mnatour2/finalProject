@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="13pt" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_weight="0.5"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/firstNameTxt"
+            android:layout_width="200dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:layout_weight="0.5"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/lastNameTxt"
+            android:layout_width="200dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_weight="0.5"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/usernameTxt"
+            android:layout_width="200dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Password"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="onRegister"
+            android:text="Register" />
+    </TableRow>
+
+
+</TableLayout>
