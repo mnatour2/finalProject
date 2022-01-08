@@ -35,9 +35,9 @@
         <EditText
             android:id="@+id/firstNameTxt"
             android:layout_width="200dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_weight="0.5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
 
     <TableRow
@@ -56,9 +56,9 @@
         <EditText
             android:id="@+id/lastNameTxt"
             android:layout_width="200dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_weight="0.5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
 
     <TableRow
@@ -77,9 +77,9 @@
         <EditText
             android:id="@+id/usernameTxt"
             android:layout_width="200dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_weight="0.5"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
 
     <TableRow
@@ -100,7 +100,7 @@
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
 
     <TableRow
