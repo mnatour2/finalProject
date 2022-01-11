@@ -15,14 +15,16 @@ public class HomeCustomer extends AppCompatActivity {
     }
 
     public void onViewRoom(View view){
-
+        Intent search=new Intent(getApplicationContext(), SearchRooms.class);
+        startActivity(search);
     }
 
     public void onRoomService(View view){
 
     }
 
-    public void onViewInfo(View view){
-
+    public void onReserve(View view){
+        Intent reserve=new Intent(getApplicationContext(), ReserveRoom.class);
+        startActivity(reserve);
     }
 }

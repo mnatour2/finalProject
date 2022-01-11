@@ -45,7 +45,7 @@
             android:layout_margin="5dp"
             android:backgroundTint="@color/purple_200"
             android:text="View your Personal Info"
-            android:onClick="onViewInfo"/>
+            />
 
         <Button
             android:id="@+id/imageButton6"
@@ -54,7 +54,8 @@
             android:layout_gravity="left|top"
             android:layout_margin="5dp"
             android:backgroundTint="@color/purple_200"
-            android:text="Temp" />
+            android:text="Reserve rooms"
+            android:onClick="onReserve"/>
 
 
     </GridLayout>

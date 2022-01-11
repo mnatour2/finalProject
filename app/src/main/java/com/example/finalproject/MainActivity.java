@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             public void run (){
                 try {
                     sleep(2000);
-                    Intent login=new Intent(getApplicationContext(), SearchRooms.class);
+                    Intent login=new Intent(getApplicationContext(), Login.class);
                     startActivity(login);
                     finish();
                 } catch (InterruptedException e) {

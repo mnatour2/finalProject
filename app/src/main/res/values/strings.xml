@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">finalProject</string>
+    <string name="room_resevation">Room Resevation</string>
+    <string name="reserve">Reserve</string>
 </resources>

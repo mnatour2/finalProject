@@ -69,7 +69,7 @@ public class Login extends AppCompatActivity {
 
     public void isValid(String username, String password) {
 
-        String url = "http://192.168.1.138/android/getCustomers.php";
+        String url = "http://192.168.0.102/android/getCustomers.php";
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url,
                 null, new Response.Listener<JSONArray>() {
             @Override

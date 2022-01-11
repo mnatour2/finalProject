@@ -1,5 +1,6 @@
 package com.example.finalproject;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.finalproject.Datamodel.ItemDataModel;
 
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ import java.util.ArrayList;
 public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHolder>  implements Filterable {
 
     private ArrayList<ItemDataModel> dataSet;
+    private Context context;
     private ArrayList<ItemDataModel> FullList;
 
     class MyViewHolder extends RecyclerView.ViewHolder {
@@ -49,6 +52,8 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.MyViewHo
     public void onBindViewHolder(@NonNull RecycleAdapter.MyViewHolder holder, int position) {
         ItemDataModel currentItem = dataSet.get(position);
         holder.imageView.setImageResource(currentItem.getImage());
+        context = holder.tvName.getContext();
+        //Glide.with(context).load("https://imgur.com/ZmYdxxK.png").into(holder.imageView);
         holder.tvName.setText(currentItem.getTxtname());
 
     }
