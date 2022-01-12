@@ -19,8 +19,9 @@ public class HomeCustomer extends AppCompatActivity {
         startActivity(search);
     }
 
-    public void onRoomService(View view){
-
+    public void onViewReservations(View view){
+        Intent mng=new Intent(getApplicationContext(), ManageReservations.class);
+        startActivity(mng);
     }
 
     public void onReserve(View view){

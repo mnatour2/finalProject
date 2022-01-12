@@ -34,8 +34,8 @@
             android:layout_gravity="left|top"
             android:layout_margin="5dp"
             android:backgroundTint="@color/purple_200"
-            android:onClick="onRoomService"
-            android:text="Order Room Service" />
+            android:onClick="onViewReservations"
+            android:text="Browse reservations" />
 
         <Button
             android:id="@+id/viewInfo"

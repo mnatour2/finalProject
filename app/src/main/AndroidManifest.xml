@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FinalProject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ManageReservations"
+            android:exported="false" />
+        <activity
             android:name=".ReserveRoom"
             android:exported="false" />
         <activity
