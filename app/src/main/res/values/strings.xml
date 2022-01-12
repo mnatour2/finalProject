@@ -2,4 +2,6 @@
     <string name="app_name">finalProject</string>
     <string name="room_resevation">Room Resevation</string>
     <string name="reserve">Reserve</string>
+    <string name="return1">return</string>
+    <string name="reserve_until">Reserve until</string>
 </resources>

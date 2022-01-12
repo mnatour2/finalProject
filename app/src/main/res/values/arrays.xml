@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="activities">activities</string-array>
+
+    <string-array name="room_desc">
+        <item>very luxurious room that comes with many benefits on top of a hefty price tag</item>
+        <item>a large suite that can hold a group of people especially recommended for businesses</item>
+        <item>a room that resembles that seen in the scarface mansion</item>
+        <item>this room is similar to the first one but comes with a smaller size</item>
+        <item>a room fit for small families that resembles the coziness found at ones home</item>
+    </string-array>
+
 </resources>
