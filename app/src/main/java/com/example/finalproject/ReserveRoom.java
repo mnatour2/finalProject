@@ -61,13 +61,20 @@ public class ReserveRoom
         img = findViewById(R.id.reserve_room_view);
         txt = findViewById(R.id.room_desc_txt);
         currentSelectedRoom = 0;
-        loadReservations(new VolleyCallBack() {
+        Thread getdata = new Thread(new Runnable() {
             @Override
-            public void onSuccess() {
-                Log.d("volleyCB", "volley done");
-                clearOldReservations();
+            public void run() {
+                loadReservations(new VolleyCallBack() {
+                    @Override
+                    public void onSuccess() {
+                        Log.d("volleyCB", "volley done");
+                        clearOldReservations();
+                    }
+                });
             }
-            });
+        });
+        getdata.start();
+
         img.setImageResource(R.drawable.room1);
         txt.setText(descriptions[0]);
         // Take the instance of Spinner and
