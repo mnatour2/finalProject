@@ -1,6 +1,9 @@
 package com.example.finalproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.AdapterView;
 import android.view.View;
@@ -23,6 +26,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.finalproject.Datamodel.ItemDataModel;
 import com.example.finalproject.Datamodel.ReservationModel;
 import com.example.finalproject.Datamodel.VolleyCallBack;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,6 +52,7 @@ public class ReserveRoom
     String[] descriptions;
     ImageView img;   //using position to get image
     TextView txt;
+    String currentWorkingUser;
     int currentSelectedRoom;
     ReservationModel currentRoom;
 
@@ -56,6 +61,7 @@ public class ReserveRoom
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reserve_room);
+        loadUser(ReserveRoom.this);
         descriptions = getResources().getStringArray(R.array.room_desc);
         dataSet = new ArrayList<>();
         img = findViewById(R.id.reserve_room_view);
@@ -158,7 +164,7 @@ public class ReserveRoom
             String date = ((TextView)findViewById(R.id.textDay)).getText().toString()+
                     "-"+((TextView)findViewById(R.id.textmonth)).getText().toString()+
                     "-"+((TextView)findViewById(R.id.textyear)).getText().toString();
-            addToReservations(date, currentSelectedRoom, currentRoom.getUname());
+            addToReservations(date, currentSelectedRoom, currentWorkingUser);
         }
     }
 
@@ -334,5 +340,14 @@ public class ReserveRoom
                 dataSet.remove(i);
             }
         }
+    }
+
+    private void loadUser(Context cxt){
+        SharedPreferences prefs;
+        prefs = PreferenceManager.getDefaultSharedPreferences(cxt);
+        String jsonuname = prefs.getString("username", "");
+        Gson gson = new Gson();
+        currentWorkingUser = gson.fromJson(jsonuname, String.class);
+        Log.d("current user:", currentWorkingUser);
     }
 }
