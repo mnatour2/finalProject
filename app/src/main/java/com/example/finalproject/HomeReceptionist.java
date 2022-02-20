@@ -14,21 +14,15 @@ public class HomeReceptionist extends AppCompatActivity {
         setContentView(R.layout.home_receptionist);
     }
 
-    public void onManageCustomers(View view) {
-
-    }
-
-    public void onManageRooms(View view) {
-
-    }
-
-    public void onManageRoomService(View view) {
-
-    }
-
-    public void onSearch(View view) {
+    public void RoomStatus(View view) {
+        Intent intent = new Intent(getApplicationContext(), AddRoom.class);
+        startActivity(intent);
 
     }
 
 
+    public void goTomanage(View view) {
+        Intent intent = new Intent(getApplicationContext(),ManageCustomer.class);
+        startActivity(intent);
+    }
 }

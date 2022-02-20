@@ -43,7 +43,7 @@ public class ReserveRoom
         extends AppCompatActivity
         implements AdapterView.OnItemSelectedListener {
     private ArrayList<ReservationModel> dataSet;
-    private static final String url = "http://192.168.0.102/android/getReservations.php";
+    private static final String url = "http://192.168.1.3/android/getReservations.php";
     // create array of Strings
     // and store name of courses
     String[] rooms = { "Luxury room one", "Presidential suite",
@@ -91,11 +91,7 @@ public class ReserveRoom
 
         // Create the instance of ArrayAdapter
         // having the list of courses
-        ArrayAdapter ad
-                = new ArrayAdapter(
-                this,
-                android.R.layout.simple_spinner_item,
-                rooms);
+        ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_spinner_item, rooms);
 
         // set simple layout resource file
         // for each item of spinner
@@ -215,7 +211,7 @@ public class ReserveRoom
     }
 
     private void removeReservations(int roomid){   //removes old reservations from database after dates pass
-        String url = "http://192.168.0.102/android/removeReservation.php";
+        String url = "http://192.168.1.3/android/removeReservation.php";
         RequestQueue queue = Volley.newRequestQueue(ReserveRoom.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override
@@ -266,7 +262,7 @@ public class ReserveRoom
     }
 
     private void addToReservations(String date, int roomid, String uname){       //adds a reservation
-        String url = "http://192.168.0.102/android/addReservation.php";
+        String url = "http://192.168.1.3/android/addReservation.php";
         RequestQueue queue = Volley.newRequestQueue(ReserveRoom.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override

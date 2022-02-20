@@ -5,59 +5,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <GridLayout
-        android:id="@+id/GridLayout1"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:columnCount="2"
-        android:orientation="horizontal"
-        android:rowCount="2"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="-132dp"
         tools:layout_editor_absoluteY="34dp">
 
         <Button
+
             android:id="@+id/manageCustomers"
             android:layout_width="160dp"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:layout_gravity="left|top"
             android:layout_margin="5dp"
+            android:onClick="goTomanage"
             android:backgroundTint="@color/purple_200"
             android:text="Manage Customers"
-            android:onClick="onManageCustomers"/>
+            />
+
 
         <Button
-            android:id="@+id/manageRooms"
+
+            android:id="@+id/RoomStatus"
             android:layout_width="160dp"
-            android:layout_height="90dp"
+            android:layout_height="70dp"
             android:layout_gravity="left|top"
+            android:onClick="RoomStatus"
             android:layout_margin="5dp"
             android:backgroundTint="@color/purple_200"
-            android:text="Manage Rooms"
-            android:onClick="onManageRooms"/>
-
-        <Button
-            android:id="@+id/manageRoomService"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:layout_margin="5dp"
-            android:backgroundTint="@color/purple_200"
-            android:text="Manage Room Services"
-            android:onClick="onManageRoomService"/>
-
-        <Button
-            android:id="@+id/imageButton6"
-            android:layout_width="160dp"
-            android:layout_height="90dp"
-            android:layout_gravity="left|top"
-            android:layout_margin="5dp"
-            android:backgroundTint="@color/purple_200"
-            android:text="Search"
-            android:onClick="onSearch"/>
+            android:text="ٌAdd room"
+            />
 
 
-    </GridLayout>
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

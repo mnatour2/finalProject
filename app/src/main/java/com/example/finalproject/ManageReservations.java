@@ -34,7 +34,7 @@ public class ManageReservations extends Activity {
     ListView simpleList;
     CustomAdapterManageRes customAdapter;
     private ArrayList<ReservationModel> dataSet;
-    private static final String url = "http://192.168.0.102/android/getReservations.php";
+    private static final String url = "http://192.168.1.3/android/getReservations.php";
     private RequestQueue queue;
     String[] rooms = { "Luxury room one", "Presidential suite",
             "kingpin room", "Luxury room two",

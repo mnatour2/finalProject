@@ -49,7 +49,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void addCustomer(String firstName, String lastName, String username, String password ){
-        String url = "http://192.168.0.102/android/addbook_json.php";
+        String url = "http://192.168.1.3/android/addbook_json.php";
         RequestQueue queue = Volley.newRequestQueue(Register.this);
         StringRequest request = new StringRequest(Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override

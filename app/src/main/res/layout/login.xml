@@ -26,16 +26,17 @@
         <TextView
             android:layout_width="2dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.2"
             android:text="Username"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/usernameTxt"
             android:layout_width="20dp"
-            android:layout_height="wrap_content"
+            android:layout_height="47dp"
             android:layout_weight="0.5"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            android:background="@drawable/edit_text_border" />
     </TableRow>
 
     <TableRow
@@ -47,22 +48,24 @@
         <TextView
             android:layout_width="2px"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.2"
             android:text="Password"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/passwordTxt"
             android:layout_width="20dp"
-            android:layout_height="wrap_content"
+            android:layout_height="47dp"
             android:layout_weight="0.5"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_border" />
     </TableRow>
 
-    <TableRow
+    <LinearLayout
         android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/login"
@@ -82,7 +85,7 @@
             android:text="Register"
             android:onClick="onRegister"/>
 
-    </TableRow>
+    </LinearLayout>
 
 
 </TableLayout>

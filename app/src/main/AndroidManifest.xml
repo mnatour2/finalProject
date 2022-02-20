@@ -13,6 +13,15 @@
         android:theme="@style/Theme.FinalProject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".UpdateCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".ManageCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".AddRoom"
+            android:exported="false" />
+        <activity
             android:name=".ManageReservations"
             android:exported="false" />
         <activity
